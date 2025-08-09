@@ -1,7 +1,7 @@
 CLASS zcl_2ui5_start DEFINITION DEFERRED.
 CLASS zcl_2ui5_lock DEFINITION DEFERRED.
 
-CLASS zcl_2ui5_start DEFINITION INHERITING FROM z2ui5_test.
+CLASS zcl_2ui5_start DEFINITION INHERITING FROM z2ui5_cl_demo_app_351.
   PUBLIC SECTION.
     DATA text TYPE string VALUE 'call booking mask'.
     METHODS z2ui5_if_app~main                       REDEFINITION.
@@ -9,7 +9,7 @@ CLASS zcl_2ui5_start DEFINITION INHERITING FROM z2ui5_test.
   PRIVATE SECTION.
 ENDCLASS.
 
-CLASS zcl_2ui5_lock DEFINITION INHERITING FROM z2ui5_test.
+CLASS zcl_2ui5_lock DEFINITION INHERITING FROM z2ui5_cl_demo_app_351.
   PUBLIC SECTION.
     DATA check_initialized TYPE abap_bool.
     DATA varkey TYPE char120.
