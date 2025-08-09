@@ -82,7 +82,7 @@ CLASS z2ui5_cl_demo_app_350 IMPLEMENTATION.
           IF client->check_on_navigated( ).
             set_session_stateful( client = client stateful = abap_false ).
             TRY.
-                DATA(lo_prev_view) = z2ui5_cl_demo_app_350( client->get_app( client->get( )-s_draft-id_prev_app_stack ) ).
+                DATA(lo_prev_view) = client->get_app( client->get( )-s_draft-id_prev_app_stack ).
                 client->nav_app_leave( lo_prev_view ).
                 RETURN.
               CATCH cx_sy_move_cast_error ##NO_HANDLER ##CATCH_ALL.
