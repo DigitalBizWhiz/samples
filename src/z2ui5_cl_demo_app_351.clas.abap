@@ -8,7 +8,7 @@ CLASS z2ui5_cl_demo_app_351 DEFINITION
   PRIVATE SECTION.
 ENDCLASS.
 
-CLASS z2ui5_test IMPLEMENTATION.
+CLASS z2ui_cl_demo_app_351 IMPLEMENTATION.
     METHOD z2ui5_if_app~main.
         client->nav_app_call( NEW zcl_2ui5_start( ) ).
     ENDMETHOD.
