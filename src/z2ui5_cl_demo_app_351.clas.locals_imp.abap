@@ -1,7 +1,3 @@
-﻿*"* use this source file for the definition and implementation of
-*"* local helper classes, interface definitions and type
-*"* declarations
-
 CLASS zcl_2ui5_start DEFINITION DEFERRED.
 CLASS zcl_2ui5_lock DEFINITION DEFERRED.
 
